@@ -8,7 +8,7 @@ an2 = datetime.datetime(2024, 3, 20, 0, 00, 0)
 hours = (now.hour)
 code = 'YOUSEF-CODE'
 IDDD = '1773645536'
-token1 = '6781490489:AAHARuGsioerHZBS-ixb0sI5K3qQLbMc49A'
+token1 = '7086121874:AAEk2kNcp2Pa2khfjHCVbidvZGqY4XHFQZc'
 
 
 uoijh51= ' هناك من شغل الادات جديدة 🐬 '
