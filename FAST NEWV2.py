@@ -36,6 +36,15 @@ token1 = '7086121874:AAEk2kNcp2Pa2khfjHCVbidvZGqY4XHFQZc'
 
 uoijh51= ' هناك من شغل الادات جديدة 🐬 '
 requests.get("https://api.telegram.org/bot"+str(token1)+"/sendMessage?chat_id="+str(IDDD)+"&text="+str(uoijh51))
+
+import requests
+try:
+ prox= requests.get('https://raw.githubusercontent.com/HWGSH51642yqfag10616262/PUWH11763IOSYUTQFSGSVDHVEYWIIlllllllllllIIIIMMUMNBVCXDZSAQEWTWHSB/main/proxyy.txt').text
+ open('.prox.txt','w').write(prox)
+except Exception as e:
+ print(' ')
+prox=open('.prox.txt','r').read().splitlines()
+
 from urllib import request
 proxy = request.ProxyHandler(
 {"http":"127.0.0.1:443"}
@@ -206,7 +215,7 @@ k = '\033[93m' # KUNING +
 h = '\x1b[1;92m' # HIJAU +
 hh = '\033[32m' # HIJAU -
 u = '\033[95m' # UNGU
-kk = '\033[33m' # KUNING -
+kk = '\033[33m' # KUNING -i
 b = '\33[1;96m' # BIRU -
 p = '\x1b[0;34m' # BIRU +
 asu = random.choice([m,k,h,u,b])
