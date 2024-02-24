@@ -1,6 +1,26 @@
-print('    \x1b[0;31m تم انتهاء المدة المجانيه للاشتراك قم بل تواصل مع المطور @krro6          ')
+from licensing.models import *
+from licensing.methods import Key, Helpers
 
-exit()
+
+RSAPubKey = "<RSAKeyValue><Modulus>sGD1ZhUH41CXh6EymHsc3VJQB+Mjjdbp02w5W2GIccTDZqg73mYSla12yvXi3cQ4LFaLDIRolcZNTJL0sZ37neR9lJTnAFH5uCjJPqO15Z+gC9pPLTaZOdgW4xgcIqhLzU5PYqpf35GIDRBe/IXjpUI9o7R6F0hvXnk/lpDt+h548xftsuk4f7XfKDAMverOyYob85v82jzQvgwwZbtJHez0YH6+NehNIRdmRC7v8/igO960Fiodrj0GQFlbzvYMGxwZQ5HeDonac+rMYlibknF99tMuY1scgg+j5x6edaMX7swGi1v2WPCB/M3qjFuSx7zuwMOGXZsKkC3vGqk1FQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>"
+auth = "WyI3NTg0NTIzOSIsIkhkdjIyZ0JvejJaMGQ1MWQ3alM1THd3c3d3Z0JSNjV2Y3FYMkw5ckYiXQ=="
+def Authkey():
+    print(' BUY KEU : @krro6  TELEGRAM')
+    print('')
+    key = str(input(" \033[0;91m ENTER VIP KEY :- \033[0;91m"))
+    result = Key.activate(token=auth,\
+        rsa_pub_key=RSAPubKey,\
+        product_id='23250', \
+        key=key,\
+        machine_code=Helpers.GetMachineCode())
+
+    if result[0] == None or not Helpers.IsOnRightMachine(result[0]):
+        print("\033[95;1m FALSE {0}".format(result[1]))
+        exit()
+    else:
+        print("\033[91;1m TRUE WELCOME MY TOOL\033[91;1m")
+        pass
+Authkey()
 #• LUCFER XO•
 import requests,bs4,json,os,sys,random,datetime,time,re
 print(' جاري تثبيت المكتبة المطلوبة .....')
