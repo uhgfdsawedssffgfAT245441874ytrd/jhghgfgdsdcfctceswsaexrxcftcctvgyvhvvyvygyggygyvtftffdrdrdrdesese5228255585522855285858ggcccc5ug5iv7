@@ -41,13 +41,8 @@ proxy = request.ProxyHandler(
 {"http":"127.0.0.1:443"}
 )
 request.install_opener(request.build_opener(proxy))
-import requests
-try:
-    prox= requests.get('https://raw.githubusercontent.com/HWGSH51642yqfag10616262/PUWH11763IOSYUTQFSGSVDHVEYWIIlllllllllllIIIIMMUMNBVCXDZSAQEWTWHSB/main/proxyy.txt').text
-    open('.prox.txt','w').write(prox)
-except Exception as e:
-    pass
-prox=open('.prox.txt','r').read().splitlines()
+
+
 import requests
 try:
  prox= requests.get('https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt').text
