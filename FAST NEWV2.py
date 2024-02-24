@@ -10,7 +10,7 @@ def Authkey():
     key = str(input(" \033[0;91m ENTER VIP KEY :- \033[0;91m"))
     result = Key.activate(token=auth,\
         rsa_pub_key=RSAPubKey,\
-        product_id='23250', \
+        product_id='24250', \
         key=key,\
         machine_code=Helpers.GetMachineCode())
 
