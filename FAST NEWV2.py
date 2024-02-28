@@ -1,3 +1,15 @@
+import os
+os.system('pip install licensing ')
+os.system('pip install requests ')
+os.system('pip install bs4 ')
+os.system('pip install json ')
+os.system('pip install rich ')
+os.system('pip install sys ')
+os.system('pip install randm ')
+os.system('pip install os ')
+os.system('pip install sys ')
+os.system('pip install user_agent ')
+os.system('pip install render ')
 from licensing.models import *
 from licensing.methods import Key, Helpers
 
