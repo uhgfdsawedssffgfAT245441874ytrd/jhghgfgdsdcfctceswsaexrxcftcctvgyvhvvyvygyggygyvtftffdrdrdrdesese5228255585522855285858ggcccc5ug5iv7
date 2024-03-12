@@ -49,13 +49,6 @@ token1 = '7086121874:AAEk2kNcp2Pa2khfjHCVbidvZGqY4XHFQZc'
 uoijh51= ' هناك من شغل الادات جديدة 🐬 '
 requests.get("https://api.telegram.org/bot"+str(token1)+"/sendMessage?chat_id="+str(IDDD)+"&text="+str(uoijh51))
 
-import requests
-try:
- prox= requests.get('https://raw.githubusercontent.com/HWGSH51642yqfag10616262/PUWH11763IOSYUTQFSGSVDHVEYWIIlllllllllllIIIIMMUMNBVCXDZSAQEWTWHSB/main/proxyy.txt').text
- open('.prox.txt','w').write(prox)
-except Exception as e:
- print(' ')
-prox=open('.prox.txt','r').read().splitlines()
 
 from urllib import request
 proxy = request.ProxyHandler(
@@ -63,23 +56,6 @@ proxy = request.ProxyHandler(
 )
 request.install_opener(request.build_opener(proxy))
 
-
-import requests
-try:
- prox= requests.get('https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt').text
- open('.prox.txt','w').write(prox)
-except Exception as e:
- print(' ')
-prox=open('.prox.txt','r').read().splitlines()
-
-
-import requests
-try:
-    prox= requests.get('https://github.com/Pro-Max-420/Api/blob/main/prox.txt').text
-    open('.prox.txt','w').write(prox)
-except Exception as e:
-    pass
-prox=open('.prox.txt','r').read().splitlines()
 
 import urllib3,rich,base64
 from fake_useragent import UserAgent
